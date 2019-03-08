@@ -15,7 +15,7 @@ Make sure Composer's bin directory (defaulted to` ~/.composer/vendor/bin/`) is i
 Clone or download this repo somewhere on your computer or install it with Composer:
 
 ```
-$ composer require jakubciszak/mg-codestyle
+$ composer require jakubciszak/mg-codestandards
 ```
 
 ## Usage
@@ -23,5 +23,5 @@ Select a standard to run with CodeSniffer:
 
 Run CodeSniffer:
 ```
-$ phpcs --standard=./vendor/jakubciszak/mg-codestyle/mg1 /path/to/code
+$ phpcs --standard=./vendor/jakubciszak/mg-codestandards/mg1 /path/to/code
 ```
