@@ -1,0 +1,13 @@
+{
+    "name": "jakubciszak/mg-codestandards",
+    "description": "Code styles for Magento",
+    "require": {
+        "magento-ecg/coding-standard": ">=3.0"
+    },
+    "authors": [
+        {
+            "name": "Jakub Ciszak",
+            "email": "j.ciszak@gmail.com"
+        }
+    ]
+}
