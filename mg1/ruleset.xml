@@ -6,6 +6,17 @@
         <exclude name="Squiz.Classes.ValidClassName"/>
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
     </rule>
+    <rule ref="PSR2" />
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+        </properties>
+    </rule>
+    <rule ref="Squiz.Functions">
+        <properties>
+            <property name="ignoreComments" value="false" />
+        </properties>
+    </rule>
 
     <rule ref="Generic.Files.LineLength">
         <properties>
@@ -14,4 +25,3 @@
         </properties>
     </rule>
 </ruleset>
-
