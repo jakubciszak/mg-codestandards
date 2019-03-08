@@ -7,7 +7,7 @@ Before starting using our coding standard install PHP_CodeSniffer.
 The recommended installation method for PHPCS is globally with Composer:
 
 ```
-$ omposer global require "squizlabs/php_codesniffer=*"
+$ composer global require "squizlabs/php_codesniffer=*"
 ```
 
 Make sure Composer's bin directory (defaulted to` ~/.composer/vendor/bin/`) is in your PATH.
