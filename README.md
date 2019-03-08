@@ -12,19 +12,6 @@ $ composer global require "squizlabs/php_codesniffer=*"
 
 Make sure Composer's bin directory (defaulted to ` ~/.composer/vendor/bin/`) is in your PATH.
 
-### How to add the ` ~/.composer/vendor/bin/` to your PATH?
-#### Linux console
-* Open`~/.bashrc` file.
-* Add the following code:
-```bash
-export PATH=~/.composer/vendor/bin:$PATH
-```
-* Save and close
-* Use `source` command for reload `.bashrc` file.
-```bash
-$ source ~/.bashrc
-```
-
 Clone or download this repo somewhere on your computer or install it with Composer:
 
 ```bash
@@ -50,4 +37,18 @@ Select a standard to run with CodeSniffer:
 Run CodeSniffer:
 ```
 $ phpcs --standard=./vendor/jakubciszak/mg-codestandards/mg1 /path/to/code
+```
+___
+
+### How to add the ` ~/.composer/vendor/bin/` to your PATH?
+#### Linux console
+* Open`~/.bashrc` file.
+* Add the following code:
+```bash
+export PATH=~/.composer/vendor/bin:$PATH
+```
+* Save and close
+* Use `source` command for reload `.bashrc` file.
+```bash
+$ source ~/.bashrc
 ```
