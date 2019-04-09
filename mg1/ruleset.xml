@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="mg1">
-    <description>The Pandagroup Magento 1 coding standard.</description>
-
+<ruleset name="mg1">
+    <description>Magento 1 coding standard.</description>
+    <rule ref="mg1.Classes.ClassFileName">
+        <type>error</type>
+    </rule>
     <rule ref="Ecg">
         <exclude name="Squiz.Classes.ValidClassName"/>
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
