@@ -1,18 +1,32 @@
 {
     "name": "jakubciszak/mg-codestandards",
     "description": "Code styles for Magento",
+    "autoload": {
+        "psr-4": {
+            "jakubciszak\\mgcodestandards\\": ""
+        }
+    },
     "require-dev": {
         "roave/security-advisories": "dev-master"
     },
     "require": {
         "php": ">=5.4.0",
         "magento-ecg/coding-standard": ">=3.0",
-        "squizlabs/php_codesniffer": "^3.0"
+        "squizlabs/php_codesniffer": "^3.0",
+        "composer/composer": "*"
     },
     "authors": [
         {
             "name": "Jakub Ciszak",
             "email": "j.ciszak@gmail.com"
         }
-    ]
+    ],
+    "scripts": {
+        "post-package-install": [
+            "jakubciszak\\mgcodestandards\\Scripts::pathes"
+        ],
+        "post-package-update": [
+            "jakubciszak\\mgcodestandards\\Scripts::pathes"
+        ]
+    }
 }
