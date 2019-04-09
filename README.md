@@ -27,7 +27,7 @@ $ composer global require jakubciszak/mg-codestandards
 Set `installed_paths` for PHPCS from **magento-ecg**
 
 ```bash
-$ ~/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/magento-ecg/coding-standard
+$ ~/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/jakubciszak/mg-codestandards/
 
 
 ```
