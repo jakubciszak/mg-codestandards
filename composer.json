@@ -14,5 +14,17 @@
             "name": "Jakub Ciszak",
             "email": "j.ciszak@gmail.com"
         }
-    ]
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "cp -rf vendor/magento-ecg/coding-standard/Ecg ./",
+            "cp -rf vendor/magento-ecg/coding-standard/EcgM2 ./"
+        ],
+        "post-autoload-dump": [
+            "MyVendor\\MyClass::postAutoloadDump"
+        ],
+        "post-create-project-cmd": [
+            "php -r \"copy('config/local-example.php', 'config/local.php');\""
+        ]
+    }
 }
