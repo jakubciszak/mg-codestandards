@@ -1,6 +1,6 @@
 <?php
 
-namespace jakubciszak\mgcodestandards\mg1\Sniffs\Classes;
+namespace jakubciszak\mgcodestandards\Sniffs\Classes;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;
