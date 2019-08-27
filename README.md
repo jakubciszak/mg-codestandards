@@ -2,9 +2,7 @@
 This rule based on [ECG Magento Code Sniffer Coding Standard](https://github.com/magento-ecg/coding-standard)
 
 ## Installation
-Before starting using our coding standard install PHP_CodeSniffer.
-
-The recommended installation method for PHPCS is globally with Composer:
+Clone or download the repository
 
 ```bash
 $ composer global require "squizlabs/php_codesniffer=*"
