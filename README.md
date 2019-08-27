@@ -2,51 +2,37 @@
 This rule based on [ECG Magento Code Sniffer Coding Standard](https://github.com/magento-ecg/coding-standard)
 
 ## Installation
-Clone or download the repository
+Composer create:
 
 ```bash
-$ composer global require "squizlabs/php_codesniffer=*"
-```
-
-Make sure Composer's bin directory (defaulted to ` ~/.composer/vendor/bin/`) is in your PATH.
-
-Clone or download this repo somewhere on your computer or install it with Composer:
-
-```bash
-$ composer require jakubciszak/mg-codestandards
-```
-
-You can add package to global composer require.
-
-```bash
-$ composer global require jakubciszak/mg-codestandards
-```
-
-Set `installed_paths` for PHPCS from **magento-ecg**
-
-```bash
-$ ~/.composer/vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/jakubciszak/mg-codestandards/
-
+$ composer create-project jakubciszak/mg-codestandards
 
 ```
-## Usage
+The scripts to set `installed_paths` should be running and write the info:
+```$xslt
+Config value "installed_paths" added successfully
+```
+
+
+## Basic usage
 Select a standard to run with CodeSniffer:
 
 Run CodeSniffer:
+Go to project directory:
 ```
-$ phpcs --standard=./vendor/jakubciszak/mg-codestandards/mg1 /path/to/code
+$ cd mg-codestandards
+$ vendor/bin/phpcs </path/to/moduleOrFile> --standard=MG1 
 ```
 ___
 
-### How to add the ` ~/.composer/vendor/bin/` to your PATH?
-#### Linux console
-* Open`~/.bashrc` file.
-* Add the following code:
-```bash
-export PATH=~/.composer/vendor/bin:$PATH
+## Setting up PHPSTORM
 ```
-* Save and close
-* Use `source` command for reload `.bashrc` file.
-```bash
-$ source ~/.bashrc
+File | Settings | Languages & Frameworks | PHP | Quality Tools
 ```
+`Code sniffer` -> `...` near `Configuration`.
+Set "PHP Code Sniffer Path" to:
+```/<YOURPATH>/mg-codestandards/vendor/bin/phpcs```
+
+Next go to 
+```File | Settings | Editor | Inspections```
+Find `PHP Code Sniffer Validation` and select `Condig Standard` to `MG1`
