@@ -3,7 +3,7 @@
     "description": "Code styles for Magento",
     "autoload": {
         "psr-4": {
-            "jakubciszak\\mgcodestandards\\": "mg1/"
+            "MG1\\": "mg1/"
         }
     },
     "require-dev": {
@@ -21,7 +21,7 @@
         }
     ],
     "scripts": {
-        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..",
-        "post-update-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../.."
+        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/magento-ecg/coding-standard",
+        "post-update-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/magento-ecg/coding-standard"
     }
 }
