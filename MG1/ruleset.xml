@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<ruleset name="mg1">
+<ruleset name="MG1">
     <description>Magento 1 coding standard.</description>
-    <rule ref="mg1.Classes.ClassFileName">
+    <rule ref="MG1.Classes.ClassFileName">
         <type>error</type>
     </rule>
     <rule ref="Ecg">

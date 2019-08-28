@@ -1,13 +1,18 @@
 {
     "name": "jakubciszak/mg-codestandards",
     "description": "Code styles for Magento",
+    "autoload": {
+        "psr-4": {
+            "MG1\\": "mg1/"
+        }
+    },
     "require-dev": {
         "roave/security-advisories": "dev-master"
     },
     "require": {
         "php": ">=5.4.0",
         "magento-ecg/coding-standard": ">=3.0",
-        "squizlabs/php_codesniffer": "^3.0"
+        "squizlabs/php_codesniffer": "3.*"
     },
     "authors": [
         {
@@ -16,15 +21,7 @@
         }
     ],
     "scripts": {
-        "post-install-cmd": [
-            "cp -rf vendor/magento-ecg/coding-standard/Ecg ./",
-            "cp -rf vendor/magento-ecg/coding-standard/EcgM2 ./"
-        ],
-        "post-autoload-dump": [
-            "MyVendor\\MyClass::postAutoloadDump"
-        ],
-        "post-create-project-cmd": [
-            "php -r \"copy('config/local-example.php', 'config/local.php');\""
-        ]
+        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/magento-ecg/coding-standard",
+        "post-update-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/magento-ecg/coding-standard"
     }
 }
