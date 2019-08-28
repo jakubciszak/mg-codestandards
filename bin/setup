@@ -1,0 +1,16 @@
+#!/bin/bash
+INCLUDE_PATHS="../../..,../../../vendor/magento-ecg/coding-standard"
+CONFIG_PATH="special_paths.cfg"
+if [ -f "$CONFIG_PATH" ]; then
+    ADDITIONAL_PATH=`cat $CONFIG_PATH`
+    if [ "$ADDITIONAL_PATH" != "" ]; then
+      if [ ! -d "$ADDITIONAL_PATH" ]; then
+        echo "Directory $ADDITIONAL_PATH does not exists."
+        exit 1
+      fi
+      INCLUDE_PATHS=$ADDITIONAL_PATH","$INCLUDE_PATHS
+    fi
+fi
+
+
+vendor/bin/phpcs --config-set installed_paths $INCLUDE_PATHS
