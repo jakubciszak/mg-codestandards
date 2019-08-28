@@ -36,3 +36,10 @@ Set "PHP Code Sniffer Path" to:
 Next go to 
 ```File | Settings | Editor | Inspections```
 Find `PHP Code Sniffer Validation` and select `Condig Standard` to `MG1`
+___
+
+## Company standards
+You can create your own company standards based on `mg-codestandards`.
+To do this, create a `special_paths.cfg` file in project root directory, and add line with absolute path to your standards directory.
+Eg. `/home/user/rules`.
+Next, run the `bin/setup` script.

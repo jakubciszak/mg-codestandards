@@ -1,6 +1,9 @@
 {
     "name": "jakubciszak/mg-codestandards",
     "description": "Code styles for Magento",
+    "bin": [
+        "bin/codestandards"
+    ],
     "autoload": {
         "psr-4": {
             "MG1\\": "mg1/"
@@ -21,7 +24,7 @@
         }
     ],
     "scripts": {
-        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/magento-ecg/coding-standard",
-        "post-update-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/magento-ecg/coding-standard"
+        "post-install-cmd": "bin/setup",
+        "post-update-cmd": "bin/setup"
     }
 }
