@@ -35,7 +35,6 @@ class ClassFileNameSniff implements Sniff
         $fullPath = basename($phpcsFile->getFilename());
         $fileName = substr($fullPath, 0, strrpos($fullPath, '.'));
         if ($fileName === '') {
-            // No filename probably means STDIN, so we can't do this check.
             return;
         }
 

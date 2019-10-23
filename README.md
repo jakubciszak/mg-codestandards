@@ -1,5 +1,5 @@
 # Code Sniffer Rules for Magento 1
-This rule based on [ECG Magento Code Sniffer Coding Standard](https://github.com/magento-ecg/coding-standard)
+This rule based on [Magento Extension Quality Program Coding Standard](https://github.com/magento/marketplace-eqp)
 
 ## Installation
 Composer create:

@@ -1,5 +1,5 @@
 #!/bin/bash
-INCLUDE_PATHS="../../..,../../../vendor/magento-ecg/coding-standard"
+INCLUDE_PATHS="../../..,../../../vendor/magento/marketplace-eqp"
 CONFIG_PATH="special_paths.cfg"
 if [ -f "$CONFIG_PATH" ]; then
     ADDITIONAL_PATH=`cat $CONFIG_PATH`
